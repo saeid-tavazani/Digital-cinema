@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http_equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/Normalize.css">
+    <link rel="stylesheet" href="Assets/css/app.css">
+    <link rel="stylesheet" href="Assets/css/index.css">
+    <link rel="stylesheet" href="Assets/css/font.icon.css">
+    <link rel="stylesheet" href="Assets/css/Responsive.css">
+    <!-- ! logo ! -->
+    <link rel="icon" href="Assets/img/logo/logo_head.png">
+    <!-- ! logo ! -->
+    <title>GISHEH_8</title>
+</head>
+
+<body>
+    <!-- ? start header ? -->
+    <header class="menu_header container">
+        <nav class="menu_header_nav">
+            <div class="menu_header_nav_item">
+                <div class="nav_item_a">
+                    <div class="nav_item_a_logo"><a href="#"><img src="Assets/img/logo/logo_head.png"
+                                alt="logo_GISHEH"></a></div>
+                    <div class="nav_item_a_list">
+                        <div class="nav_item_a_list_line"></div>
+                        <ul>
+                            <li class="active"><a href="#"><i class="icon-home-solid"></i>خانه</a></li>
+                            <li><a href="#"><i class="icon-Camera"></i>فیلم و تئاتر</a></li>
+                            <li><a href="#"><i class="icon-Guitar"></i>کنسرت</a></li>
+                            <li><a href="#"><i class="icon-Surprise-box"></i>درباره ما</a></li>
+                            <li><a href="#"><i class="icon-conversation"></i>ارتباط با ما</a></li>
+                            <li><a href="#"><i class="icon-law"></i>قوانین</a></li>
+                            <li><a href="#"><i class="icon-question"></i>سوالات</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="nav_item_a_search">
+                        <form action="get" autocomplete="on">
+                            <i class="icon-search" id="icon-search"></i>
+                            <div class="search_input_box">
+                                <input class="input_box_search_text" name="s" type="text"
+                                    placeholder="جستجو برای . . .">
+                                <button class="input_box_search_btn" type="submit"><i class="icon-search"
+                                        aria_hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav_item_b">
+                    <a href="#" class="btn_ticket">پیگیری بلیت</a>
+                    <span class="icon_logon"><i class="icon-user"></i><span>ورود / ثبت نام</span></span>
+                    <span class="icon_logon"><i class="icon-sign-out"></i><span>خروج</span></span>
+                </div>
+            </div>
+            <div class="menu_header_nav_btn">
+                <i class="icon-bars-solid" aria_hidden="true"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- ? start search box Mobile -->
+    <article class="search_box_Mobile">
+        <li class="search_icon"><span><i class="icon-search"></i>جست و جو</span></li>
+        <form action="get" autocomplete="on">
+            <input class="search_box_Mobile_text" name="s" type="text" placeholder="جستجو برای . . .">
+            <button class="search_box_Mobile_btn" type="submit"><i class="icon-search"></i></button>
+        </form>
+    </article>
+    <!-- ? start end box Mobile -->
+    <!-- ? start form log in -->
+    <article class="box__login">
+        <section class="box__login__center">
+            <nav class="box__login__menu">
+                <div class="login__menu__top"><i class="icon-times"></i></div>
+                <div class="login__menu__bottom">
+                    <span class="active form_login">ورود</span>
+                    <span class="form_Register">ثبت نام</span>
+                </div>
+            </nav>
+            <!-- ! ==============< forme login >=============== -->
+            <form action="get" autocomplete="on" class="login__input">
+                <input type="number" placeholder="شماره تلفن">
+                <input type="password" placeholder="رمز عبور">
+                <button type="submit" class="m_t btn_red_open"><span>ادامه</span></button>
+                <span>رمز عبور خود را فراموش کردم</span>
+            </form>
+            <!-- ! ==============< forme login >=============== -->
+
+            <form action="get" autocomplete="on" class="Register__input">
+                <input type="text" placeholder="نام و نام خانوادگی">
+                <input type="number" placeholder="شماره تلفن">
+                <input type="password" placeholder="رمز عبور">
+                <button type="submit" class="m_t btn_red_open"><span>ادامه</span></button>
+            </form>
+
+            <form action="get" autocomplete="on" class="Register__input__code">
+                <p>لطفا کدی که به شماره موبایل 0990****102 ارسال شده را وارد کنید</p>
+                <input type="text" placeholder="کد">
+                <button type="submit" class="m_t btn_red_open"><span>ثبت نام</span></button>
+            </form>
+
+        </section>
+    </article>
+    <!-- ? end form log in -->
+    <!-- ? end header ? -->
+    <!-- ? start main ? -->
+    <main>
+        <article class="Path_guide container m_b ">
+            <section class="Path_guide__btn">
+                <a class="btn_yellow" href="#"><span> <i class="fas fa-angle-right"></i> بازگشت</i></span></a>
+            </section>
+
+            <section class="Path_guide__Way">
+                <div class="Path_guide__Way__text">
+                    <p>انتخاب سانس و سالن</p>
+                    <p>انتخاب بلوک و صندلی</p>
+                    <p>پرکردن اطلاعات</p>
+                    <p>پرداخت نهایی</p>
+                </div>
+                <div class="Path_guide__Way__Location">
+                    <a href="#" class="Path_guide__Way__Location__Point active">
+                        <span></span>
+                    </a>
+                    <div class="Path_guide__Way__Location__line active">
+                    </div>
+                    <a href="#" class="Path_guide__Way__Location__Point active">
+                        <span></span>
+                    </a>
+                    <div class="Path_guide__Way__Location__line">
+                    </div>
+                    <a class="Path_guide__Way__Location__Point">
+                        <span></span>
+                    </a>
+                    <div class="Path_guide__Way__Location__line">
+                    </div>
+                    <a class="Path_guide__Way__Location__Point">
+                    </a>
+
+                </div>
+            </section>
+
+        </article>
+        <article class="container info_chair m_b">
+            <section class="info_chair__film__th">
+                <div class="info_chair__film__text">
+                    <h1>تئاتر</h1>
+                    <p>سالن آمفی تئاتر - سیتی سنتر</p>
+                    <p>جمعه 16 مهر - ساعت 20:00</p>
+                    <a href="#" class="btn_red_open"><span>تغییر سانس</span></a>
+                </div>
+            </section>
+            <section class="selected_chairs__se">
+                <div class="Purchase_information__applyingfor__thechair__box__th ">
+                    <h1>
+                        صندلی های شما (ضرفیت سالن : 85)
+                    </h1>
+                    <div class="Fill_information__info__chair">
+                        <p>ردیف <span>1</span></p>
+                        <p>صندلی <span>6</span></p>
+                        <i class="icon-trash-regular"></i>
+                    </div>
+                    <div class="Fill_information__info__chair">
+                        <p>ردیف <span>1</span></p>
+                        <p>صندلی <span>6</span></p>
+                        <i class="icon-trash-regular"></i>
+                    </div>
+                    <div class="Fill_information__info__chair">
+                        <p>ردیف <span>1</span></p>
+                        <p>صندلی <span>6</span></p>
+                        <i class="icon-trash-regular"></i>
+                    </div>
+                    <div class="Fill_information__info__chair">
+                        <p>ردیف <span>1</span></p>
+                        <p>صندلی <span>6</span></p>
+                        <i class="icon-trash-regular"></i>
+                    </div>
+                    <div class="Fill_information__info__chair">
+                        <p>ردیف <span>1</span></p>
+                        <p>صندلی <span>6</span></p>
+                        <i class="icon-trash-regular"></i>
+                    </div>
+                    <div class="Fill_information__info__chair">
+                        <p>ردیف <span>1</span></p>
+                        <p>صندلی <span>6</span></p>
+                        <i class="icon-trash-regular"></i>
+                    </div>
+                    <div class="Fill_information__info__chair">
+                        <p>ردیف <span>1</span></p>
+                        <p>صندلی <span>6</span></p>
+                        <i class="icon-trash-regular"></i>
+                    </div>
+                </div>
+                <div class="selected_chairs__se__info">
+                    <p> تعداد صندلی ها : <span>8<i class="icon-chair color_blue"></i></span></p>
+                    <p> قیمت : <span>8000000</span></p>
+                    <a href="#" class="btn_yellow"><span>ثبت صندلی و نمایش جزئیات</span></a>
+                </div>
+            </section>
+
+        </article>
+        <article class="info_chair__Guide__th container m_b">
+            <section>
+                <!-- ******************** -->
+                <span>
+                    <i class="icon-chair color_dark2"></i>
+                    فاصله اجتماعی
+                </span>
+                <!-- ******************** -->
+                <span>
+                    <i class="icon-chair color_yellow2"></i>
+                    رزرو
+                </span>
+                <!-- ******************** -->
+                <span>
+                    <i class="icon-chair color_red2"></i>
+                    فروخته شده
+                </span>
+                <!-- ******************** -->
+                <span>
+                    <i class="icon-chair color_blue"></i>
+                    انتخاب شما
+                </span>
+                <!-- ******************** -->
+                <span>
+                    <i class="icon-chair color_greenvi"></i>
+                    vip
+                </span>
+                <!-- ******************** -->
+                <span>
+                    <i class="icon-chair color_green1"></i>
+                    ردیف 1 - 4 (60,000 T)
+                </span>
+                <!-- ******************** -->
+                <span>
+                    <i class="icon-chair color_green2"></i>
+                    ردیف 5 - 8 (30,000 T)
+                </span>
+                <!-- ******************** -->
+            </section>
+        </article>
+        <article class="container Layout_hall">
+            <section class="Layout_hall__Screens">
+                <p> پرده نمایش</p>
+            </section>
+            <section class="Layout_hall__chair">
+                <div class="Layout_hall__chair__number">
+                    <span>
+                        vip
+                    </span>
+                    <span>
+                        vip
+                    </span>
+                    <span>
+                        vip
+                    </span>
+                    <span>
+                        1
+                    </span>
+                    <span>
+                        2
+                    </span>
+                    <span>
+                        3
+                    </span>
+                    <span>
+                        4
+                    </span>
+                    <span>
+                        5
+                    </span>
+                    <span>
+                        6
+                    </span>
+                    <span>
+                        7
+                    </span>
+                    <span>
+                        8
+                    </span>
+
+                </div>
+                <!-- ***************************************** -->
+                <div class="Layout_hall__chair__hall">
+                    <!-- *************************************** -->
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>2</b></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>3</b></span>
+                        <span class="icon-chair chair__box"></span>
+                    </div>
+                    <!-- ******************************* -->
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>5</b></span>
+                        <span class="icon-chair chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>7</b></span>
+                        <span class="icon-chair chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>9</b></span>
+                        <span class="icon-chair chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>11</b></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>1</b></span>
+                        <span class="icon-chair chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>1</b></span>
+                        <span class="icon-chair chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>1</b></span>
+                        <span class="icon-chair chair__box"></span>
+                        <span class="icon-chair chair__box color_greenvi"><b>1</b></span>
+                        <span class="icon-chair chair__box"></span>
+                    </div>
+                    <!-- ******************************* -->
+
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                    </div>
+                    <!-- ******************************* -->
+
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                    </div>
+                    <!-- ******************************* -->
+
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                    </div>
+                    <!-- ******************************* -->
+
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                    </div>
+                    <!-- ******************************* -->
+
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                    </div>
+                    <!-- ******************************* -->
+
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                    </div>
+                    <!-- ******************************* -->
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                    </div>
+                    <!-- ******************************* -->
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                    </div>
+                    <!-- ******************************* -->
+                    <div class="Layout_hall__chair__box">
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                        <span class="icon-chair chair__box"><b>1</b></span>
+                    </div>
+                    <!-- *************************************** -->
+                </div>
+                <!-- ***************************************** -->
+                <div class="Layout_hall__chair__number">
+                    <span>
+                        vip
+                    </span>
+                    <span>
+                        vip
+                    </span>
+                    <span>
+                        vip
+                    </span>
+                    <span>
+                        1
+                    </span>
+                    <span>
+                        2
+                    </span>
+                    <span>
+                        3
+                    </span>
+                    <span>
+                        4
+                    </span>
+                    <span>
+                        5
+                    </span>
+                    <span>
+                        6
+                    </span>
+                    <span>
+                        7
+                    </span>
+                    <span>
+                        8
+                    </span>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- ? end main ? -->
+    <!-- ? start footer -->
+    <footer class="footer container">
+        <section class="footer_logo">
+            <img src="Assets/img/logo/logo-RR.png" alt="footer_logo">
+            <img src="Assets/img/logo/gisheh(2)2.png" alt="footer_logo">
+        </section>
+        <section class="footer_menu">
+            <nav class="footer_menu_mdia">
+                <a href="#"><i class="icon-instagram"></i></a>
+                <a href="#"><i class="icon-youtube"></i></a>
+                <a href="#"><i class="icon-facebook"></i></a>
+                <a href="#"><i class="icon-telegram"></i></a>
+                <a href="#"><i class="icon-twitter-square"></i></a>
+            </nav>
+            <nav class="footer_menu_list">
+                <ul>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                    <li><a href="#">اپلیکیشن ها</a></li>
+                    <li><a href="#">قوانین و مقررات</a></li>
+                </ul>
+            </nav>
+            <p class="footer_menu_info">خدمات ارایه شده در گیشه 8، دارای مجوز های لازم از مراجع مربوطه می باشد و هر
+                گونه بهره برداری و سوء
+                استفاده از محتوای نماوا، پیگرد قانونی دارد.
+            </p>
+        </section>
+        <section class="footer_namd">
+            <a href="#"><img src="Assets/img/logo/enamad-1.png" alt="img_namad"></a>
+            <a href="#"><img src="Assets/img/logo/enamad-2.png" alt="img_namad"></a>
+        </section>
+    </footer>
+    <!-- <div class="line_footer"></div> -->
+    <!-- ? start footer -->
+</body>
+
+<script src="Assets/js/jquery-3.6.0.min.js"></script>
+<script src="Assets/js/func.js"></script>
+<script src="Assets/js/style.js"></script>
+
+</html>

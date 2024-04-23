@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http_equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/Normalize.css">
+    <link rel="stylesheet" href="Assets/css/app.css">
+    <link rel="stylesheet" href="Assets/css/index.css">
+    <link rel="stylesheet" href="Assets/css/font.icon.css">
+    <link rel="stylesheet" href="Assets/css/Responsive.css">
+    <!-- ! logo ! -->
+    <link rel="icon" href="Assets/img/logo/logo_head.png">
+    <!-- ! logo ! -->
+    <title>GISHEH_8</title>
+</head>
+
+<body>
+    <!-- ? start header ? -->
+    <header class="menu_header container">
+        <nav class="menu_header_nav">
+            <div class="menu_header_nav_item">
+                <div class="nav_item_a">
+                    <div class="nav_item_a_logo"><a href="#"><img src="Assets/img/logo/logo_head.png"
+                                alt="logo_GISHEH"></a></div>
+                    <div class="nav_item_a_list">
+                        <div class="nav_item_a_list_line"></div>
+                        <ul>
+                            <li class="active"><a href="#"><i class="icon-home-solid"></i>خانه</a></li>
+                            <li><a href="#"><i class="icon-Camera"></i>فیلم و تئاتر</a></li>
+                            <li><a href="#"><i class="icon-Guitar"></i>کنسرت</a></li>
+                            <li><a href="#"><i class="icon-Surprise-box"></i>درباره ما</a></li>
+                            <li><a href="#"><i class="icon-conversation"></i>ارتباط با ما</a></li>
+                            <li><a href="#"><i class="icon-law"></i>قوانین</a></li>
+                            <li><a href="#"><i class="icon-question"></i>سوالات</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="nav_item_a_search">
+                        <form action="get" autocomplete="on">
+                            <i class="icon-search" id="icon-search"></i>
+                            <div class="search_input_box">
+                                <input class="input_box_search_text" name="s" type="text"
+                                    placeholder="جستجو برای . . .">
+                                <button class="input_box_search_btn" type="submit"><i class="icon-search"
+                                        aria_hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav_item_b">
+                    <a href="#" class="btn_ticket">پیگیری بلیت</a>
+                    <span class="icon_logon"><i class="icon-user"></i><span>ورود / ثبت نام</span></span>
+                    <span class="icon_logon"><i class="icon-sign-out"></i><span>خروج</span></span>
+                </div>
+            </div>
+            <div class="menu_header_nav_btn">
+                <i class="icon-bars-solid" aria_hidden="true"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- ? start search box Mobile -->
+    <article class="search_box_Mobile">
+        <li class="search_icon"><span><i class="icon-search"></i>جست و جو</span></li>
+        <form action="get" autocomplete="on">
+            <input class="search_box_Mobile_text" name="s" type="text" placeholder="جستجو برای . . .">
+            <button class="search_box_Mobile_btn" type="submit"><i class="icon-search"></i></button>
+        </form>
+    </article>
+    <!-- ? start end box Mobile -->
+    <!-- ? start form log in -->
+    <article class="box__login">
+        <section class="box__login__center">
+            <nav class="box__login__menu">
+                <div class="login__menu__top"><i class="icon-times"></i></div>
+                <div class="login__menu__bottom">
+                    <span class="active form_login">ورود</span>
+                    <span class="form_Register">ثبت نام</span>
+                </div>
+            </nav>
+            <!-- ! ==============< forme login >=============== -->
+            <form action="get" autocomplete="on" class="login__input">
+                <input type="number" placeholder="شماره تلفن">
+                <input type="password" placeholder="رمز عبور">
+                <button type="submit" class="m_t btn_red_open"><span>ادامه</span></button>
+                <span>رمز عبور خود را فراموش کردم</span>
+            </form>
+            <!-- ! ==============< forme login >=============== -->
+
+            <form action="get" autocomplete="on" class="Register__input">
+                <input type="text" placeholder="نام و نام خانوادگی">
+                <input type="number" placeholder="شماره تلفن">
+                <input type="password" placeholder="رمز عبور">
+                <button type="submit" class="m_t btn_red_open"><span>ادامه</span></button>
+            </form>
+
+            <form action="get" autocomplete="on" class="Register__input__code">
+                <p>لطفا کدی که به شماره موبایل 0990****102 ارسال شده را وارد کنید</p>
+                <input type="text" placeholder="کد">
+                <button type="submit" class="m_t btn_red_open"><span>ثبت نام</span></button>
+            </form>
+
+        </section>
+    </article>
+    <!-- ? end form log in -->
+    <!-- ? end header ? -->
+    <!-- ? start main ?-->
+    <main>
+        <!-- * start film_chosen info-->
+        <article class="film_chosen m_b">
+            <section class="film_chosen_img">
+                <picture class="film_chosen_img_box">
+                    <source media="(max-width: 600px)" srcset="Assets/img/slider/bkg.png">
+                    <source media="(max-width: 991px)" srcset="Assets/img/slider/u852.jpg">
+                    <img src="Assets/img/slider/unnamed.png">
+                </picture>
+                <div class="film_chosen_filter"></div>
+            </section>
+            <section class="film_chosen_info container">
+                <div class="film_chosen_info_ti">
+                    <img src="Assets/img/logo/logordjtdofrjuiho08sryhoii.png" alt="efs">
+                    <div>
+                        <img src="Assets/img/Movie/خانه کاغذی.png" alt="movie_img">
+                        <div class="film_chosen_info_te">
+                            <h3>خانه کاغذی</h3>
+                            <p><span>کارگردان : </span>Mark Andrews</p>
+                            <p><span>ژانر : </span>ماجراجویی</p>
+                            <p><span>زمان : </span>دقیقه 98</p>
+                            <p><span><i class="icon-like"></i></span>4.2 / 5</p>
+                        </div>
+                    </div>
+                    <div class="slider_box_info_btn">
+                        <a href="#" class="btn_yellow boy_cinema_ticket"><span>انتخاب سینما و خرید بلیت</span></a>
+                        <a href="#" class="btn_red"><span>پیش نمایش</span></a>
+                    </div>
+                </div>
+                <div class="film_chosen_box_text select_content_b">
+                    <div class="film_chosen_info_text">
+                        <h3>درباره فیلم </h3>
+                        <p>درباره فیلم: فیلم سینمایی دینامیت به کارگردانی مسعود اطیابی و تهیه کنندگی ابراهیم عامریان، با
+                            بازی پژمان جمشیدی، محسن کیایی، احمد مهرانفر، نازنین بیاتی، نادر سلیمانی، زیبا کرمعلی و
+                            میرطاهر
+                            مطلومی در سال 1398 ساخته شده است. پخش فیلم دینامیت با خانه فیلم است. این فیلم از تاریخ 10
+                            تیر
+                            1400 در سینماهای سراسر کشور اکران می شود. خلاصه فیلم: با نقل مكان كردن دو جوان دانشجو به
+                            ساختماني با همسايه هاي متفاوت، چالش ها و مشكلاتي پيش روي آنها قرار ميگيرد.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="film_chosen_info_profile select_content_b" id="film_chosen_info_profile">
+                    <h3>بازیگران</h3>
+                    <div class="film_chosen_profile_actor">
+                        <p><img src="Assets/img/profile/56465456l (2).png" alt="profile"><span>شهاب حسینی</span></p>
+                        <p><img src="Assets/img/profile/56465456l (3).png" alt="profile"><span>محمد نوید زاده</span>
+                        </p>
+                        <p><img src="Assets/img/profile/golzar.png" alt="profile"><span>رضا گلزار</span></p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- * end film_chosen info-->
+        <!-- *************** -->
+        <article class="select_content container m_b">
+            <section>
+                <span class="select_content__active" id="select_a">انتخاب سانس</span>
+                <span id="select_b">درباره فیلم و نظرات</span>
+            </section>
+        </article>
+        <!-- ************** -->
+        <!-- * start sanse-->
+        <article class="container m_b select_content_b">        
+            <section id="film_chosen_text">
+                <div class="film_chosen_info_text">
+                    <h3>درباره فیلم</h3>
+                    <p>
+                        درباره فیلم: فیلم سینمایی دینامیت به کارگردانی مسعود اطیابی و تهیه کنندگی ابراهیم عامریان، با
+                        بازی پژمان جمشیدی، محسن کیایی، احمد مهرانفر، نازنین بیاتی، نادر سلیمانی، زیبا کرمعلی و
+                        میرطاهر
+                        مطلومی در سال 1398 ساخته شده است. پخش فیلم دینامیت با خانه فیلم است. این فیلم از تاریخ 10
+                        تیر
+                        1400 در سینماهای سراسر کشور اکران می شود. خلاصه فیلم: با نقل مكان كردن دو جوان دانشجو به
+                        ساختماني با همسايه هاي متفاوت، چالش ها و مشكلاتي پيش روي آنها قرار ميگيرد.
+                        درباره فیلم: فیلم سینمایی دینامیت به کارگردانی مسعود اطیابی و تهیه کنندگی ابراهیم عامریان، با
+                        بازی پژمان جمشیدی، محسن کیایی، احمد مهرانفر، نازنین بیاتی، نادر سلیمانی، زیبا کرمعلی و
+                        میرطاهر
+                        مطلومی در سال 1398 ساخته شده است. پخش فیلم دینامیت با خانه فیلم است. این فیلم از تاریخ 10
+                        تیر
+                        1400 در سینماهای سراسر کشور اکران می شود. خلاصه فیلم: با نقل مكان كردن دو جوان دانشجو به
+                        ساختماني با همسايه هاي متفاوت، چالش ها و مشكلاتي پيش روي آنها قرار ميگيرد.
+                    </p>
+                </div>
+            </section>
+        </article>
+        <article class="container m_b select_content_a">
+            <section class="titel_box">
+                <h2 class="h_titel">انتخاب سینما و سانس</h2>
+            </section>
+            <section class="sanse_date">
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+                <div class="sanse_date_box">
+                    <span>جمعه</span>
+                    <h2>16</h2>
+                    <span>مهر</span>
+                </div>
+            </section>
+            <!-- * start sanse cinma-->
+            <section class="sanse_date m_b">
+                <!-- ***********************-->
+                <div class="sanse_cnama_box">
+                    <img src="Assets/img/slider/5646 (2).png" alt="cnama">
+                    <div class="sanse_cnama_box_name">
+                        <p>سینما سپاهان</p>
+                    </div>
+                </div>
+                <!-- ***********************-->
+                <div class="sanse_cnama_box">
+                    <img src="Assets/img/slider/5646 (2).png" alt="cnama">
+                    <div class="sanse_cnama_box_name">
+                        <p>سینما سپاهان</p>
+                    </div>
+                </div>
+                <!-- ***********************-->
+                <div class="sanse_cnama_box">
+                    <img src="Assets/img/slider/5646 (2).png" alt="cnama">
+                    <div class="sanse_cnama_box_name">
+                        <p>سینما سپاهان</p>
+                    </div>
+                </div>
+                <!-- ***********************-->
+                <div class="sanse_cnama_box">
+                    <img src="Assets/img/slider/5646 (2).png" alt="cnama">
+                    <div class="sanse_cnama_box_name">
+                        <p>سینما سپاهان</p>
+                    </div>
+                </div>
+                <!-- ***********************-->
+            </section>
+            <!-- * end sanse cinma-->
+            <!-- * start sanse boy-->
+            <section class="sanse_boy m_b">
+                <section class="titel_box">
+                    <h2 class="h_titel">سالن</h2>
+                </section>
+                <section class="sanse_boy_info">
+                    <!-- *****************-->
+                    <div class="sanse_boy_box">
+                        <span><i class="icon-clock-regular"></i><b>10:00</b></span>
+                        <span class="sanse_boy_box_mony"><i class="icon-ticket"></i>تومان :
+                            <b>30000</b></span>
+                        <a class="sanse_boy_box_btn" href="#">خرید بلیت</a>
+                    </div>
+                    <!-- *****************-->
+                    <div class="sanse_boy_box">
+                        <span><i class="icon-clock-regular"></i><b>10:00</b></span>
+                        <span class="sanse_boy_box_mony"><i class="icon-ticket"></i>تومان :
+                            <b>30000</b></span>
+                        <a class="sanse_boy_box_btn" href="#">خرید بلیت</a>
+                    </div>
+                    <!-- *****************-->
+                    <div class="sanse_boy_box">
+                        <span><i class="icon-clock-regular"></i><b>10:00</b></span>
+                        <span class="sanse_boy_box_mony"><i class="icon-ticket"></i>تومان :
+                            <b>30000</b></span>
+                        <a class="sanse_boy_box_btn" href="#">خرید بلیت</a>
+                    </div>
+                    <!-- *****************-->
+                    <div class="sanse_boy_box">
+                        <span><i class="icon-clock-regular"></i><b>10:00</b></span>
+                        <span class="sanse_boy_box_mony"><i class="icon-ticket"></i>تومان :
+                            <b>30000</b></span>
+                        <a class="sanse_boy_box_btn" href="#">خرید بلیت</a>
+                    </div>
+                    <!-- *****************-->
+                    <div class="sanse_boy_box">
+                        <span><i class="icon-clock-regular"></i><b>10:00</b></span>
+                        <span class="sanse_boy_box_mony"><i class="icon-ticket"></i>تومان :
+                            <b>30000</b></span>
+                        <a class="sanse_boy_box_btn" href="#">خرید بلیت</a>
+                    </div>
+                    <!-- *****************-->
+                    <div class="sanse_boy_box">
+                        <span><i class="icon-clock-regular"></i><b>10:00</b></span>
+                        <span class="sanse_boy_box_mony"><i class="icon-ticket"></i>تومان :
+                            <b>30000</b></span>
+                        <a class="sanse_boy_box_btn" href="#">خرید بلیت</a>
+                    </div>
+                    <!-- *****************-->
+                </section>
+            </section>
+            <!-- * end sanse boy-->
+        </article>
+        <!-- * end sanse-->
+        <!-- * start img film activ   alaki-->
+        <article class="container m_b select_content_b">
+            <section class="titel_box">
+                <h2 class="h_titel">تصاویر فیلم</h2>
+            </section>
+            <section class="film_celct_img m_b">
+                <div class="film_celct_img_activ d_none">
+                    <img src="" alt="img_film">
+                </div>
+                <div class="film_celct_img_min">
+                    <img src="Assets/img/Movie/852.png" alt="film">
+                    <img src="Assets/img/Movie/963.png" alt="film">
+                    <img src="Assets/img/Movie/74156.png" alt="film">
+                    <img src="Assets/img/Movie/ykyyukf.png" alt="film">
+                    <img src="Assets/img/Movie/852.png" alt="film">
+                    <img src="Assets/img/Movie/963.png" alt="film">
+                    <img src="Assets/img/Movie/74156.png" alt="film">
+                    <img src="Assets/img/Movie/ykyyukf.png" alt="film">
+                </div>
+
+            </section>
+        </article>
+        <!-- * end img film activ   alaki-->
+        <!-- * start enter comment-->
+        <article class="container ma_t select_content_b">
+            <section class="titel_box m_b">
+                <h2 class="h_titel">دیدگاه ها</h2>
+            </section>
+            <!-- * comment form-->
+            <section class="comment m_t m_b">
+                <div class="comment_img_uzer"><i class="icon-user"></i></div>
+                <form action="get" class="comment_box">
+                    <textarea placeholder="دیدگاه شما" cols="30" rows="10"></textarea>
+                    <div class="comment_box_ts">
+                        <div>
+                            <div class="heart_like">
+                                <i class="icon-heart-solid"></i>
+                                <i class="icon-heart-solid"></i>
+                                <i class="icon-heart-solid"></i>
+                                <i class="icon-heart-solid"></i>
+                                <i class="icon-heart-solid"></i>
+                            </div>
+                            <span>
+                                فیلم خوبی بود
+                            </span>
+                        </div>
+                        <button type="submit" class="btn_yellow">
+                            <span>ثبت امتیاز فیلم و دیدگاه</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <!-- * comment form-->
+            <!-- * comment Posted-->
+            <section class="comment_Posted ma_t">
+                <div class="comment_Posted_titel">
+                    <span>دیدگاه های ثبت شده (20)</span>
+                    <div></div>
+                </div>
+                <div class="comment_Posted_user">
+                    <!-- ******************-->
+                    <div class="comment_Posted_box">
+                        <div class="comment_Posted_box_in">
+                            <i class="icon-user"></i>
+                            <span>سید محمد حسین موسوی</span>
+                        </div>
+                        <div class="comment_Posted_box_content">
+                            <p>
+                                سلام ببینید آقای جمشیدی بازیگر خوبی است ، اما اگر قرار باشه هر کسی از هر شغلی اومد بیرون
+                                و کاری نداشت بیاد بازیگر بشه که دیگه ، بازیگری شغل نیست . ایشون فوتبالیست بود ، الان
+                                داره مجری گری ،تبلیغ فرش ، بازیگری می‌کنه ، پس دیگه رسم هرکسی از فوتبال اومد بیرون بره
+                                بازیگر مجری بشه ،
+                            </p>
+                        </div>
+                        <div class="comment_Posted_box_like">
+                            <span>دوشنبه ۱۲ مهر ساعت ۱۴:۱۶</span>
+                            <div>
+                                <span><i class="icon-thumbs-down-regular"></i><b>5</b></span>
+                                <span><i class="icon-thumbs-up-regular"></i><b>21</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ******************-->
+                    <div class="comment_Posted_box">
+                        <div class="comment_Posted_box_in">
+                            <i class="icon-user"></i>
+                            <span>سید محمد حسین موسوی</span>
+                        </div>
+                        <div class="comment_Posted_box_content">
+                            <p>
+                                سلام ببینید آقای جمشیدی بازیگر خوبی است ، اما اگر قرار باشه هر کسی از هر شغلی اومد بیرون
+                                و کاری نداشت بیاد بازیگر بشه که دیگه ، بازیگری شغل نیست . ایشون فوتبالیست بود ، الان
+                                داره مجری گری ،تبلیغ فرش ، بازیگری می‌کنه ، پس دیگه رسم هرکسی از فوتبال اومد بیرون بره
+                                بازیگر مجری بشه ،
+                            </p>
+                        </div>
+                        <div class="comment_Posted_box_like">
+                            <span>دوشنبه ۱۲ مهر ساعت ۱۴:۱۶</span>
+                            <div>
+                                <span><i class="icon-thumbs-down-regular"></i><b>5</b></span>
+                                <span><i class="icon-thumbs-up-regular"></i><b>21</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ******************-->
+                    <div class="comment_Posted_box">
+                        <div class="comment_Posted_box_in">
+                            <i class="icon-user"></i>
+                            <span>سید محمد حسین موسوی</span>
+                        </div>
+                        <div class="comment_Posted_box_content">
+                            <p>
+                                سلام ببینید آقای جمشیدی بازیگر خوبی است ، اما اگر قرار باشه هر کسی از هر شغلی اومد بیرون
+                                و کاری نداشت بیاد بازیگر بشه که دیگه ، بازیگری شغل نیست . ایشون فوتبالیست بود ، الان
+                                داره مجری گری ،تبلیغ فرش ، بازیگری می‌کنه ، پس دیگه رسم هرکسی از فوتبال اومد بیرون بره
+                                بازیگر مجری بشه ،
+                            </p>
+                        </div>
+                        <div class="comment_Posted_box_like">
+                            <span>دوشنبه ۱۲ مهر ساعت ۱۴:۱۶</span>
+                            <div>
+                                <span><i class="icon-thumbs-down-regular"></i><b>5</b></span>
+                                <span><i class="icon-thumbs-up-regular"></i><b>21</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ******************-->
+                    <div class="comment_Posted_box">
+                        <div class="comment_Posted_box_in">
+                            <i class="icon-user"></i>
+                            <span>سید محمد حسین موسوی</span>
+                        </div>
+                        <div class="comment_Posted_box_content">
+                            <p>
+                                سلام ببینید آقای جمشیدی بازیگر خوبی است ، اما اگر قرار باشه هر کسی از هر شغلی اومد بیرون
+                                و کاری نداشت بیاد بازیگر بشه که دیگه ، بازیگری شغل نیست . ایشون فوتبالیست بود ، الان
+                                داره مجری گری ،تبلیغ فرش ، بازیگری می‌کنه ، پس دیگه رسم هرکسی از فوتبال اومد بیرون بره
+                                بازیگر مجری بشه ،
+                            </p>
+                        </div>
+                        <div class="comment_Posted_box_like">
+                            <span>دوشنبه ۱۲ مهر ساعت ۱۴:۱۶</span>
+                            <div>
+                                <span><i class="icon-thumbs-down-regular"></i><b>5</b></span>
+                                <span><i class="icon-thumbs-up-regular"></i><b>21</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ******************-->
+                    <div class="comment_Posted_box">
+                        <div class="comment_Posted_box_in">
+                            <i class="icon-user"></i>
+                            <span>سید محمد حسین موسوی</span>
+                        </div>
+                        <div class="comment_Posted_box_content">
+                            <p>
+                                سلام ببینید آقای جمشیدی بازیگر خوبی است ، اما اگر قرار باشه هر کسی از هر شغلی اومد بیرون
+                                و کاری نداشت بیاد بازیگر بشه که دیگه ، بازیگری شغل نیست . ایشون فوتبالیست بود ، الان
+                                داره مجری گری ،تبلیغ فرش ، بازیگری می‌کنه ، پس دیگه رسم هرکسی از فوتبال اومد بیرون بره
+                                بازیگر مجری بشه ،
+                            </p>
+                        </div>
+                        <div class="comment_Posted_box_like">
+                            <span>دوشنبه ۱۲ مهر ساعت ۱۴:۱۶</span>
+                            <div>
+                                <span><i class="icon-thumbs-down-regular"></i><b>5</b></span>
+                                <span><i class="icon-thumbs-up-regular"></i><b>21</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ******************-->
+                    <div class="comment_Posted_box">
+                        <div class="comment_Posted_box_in">
+                            <i class="icon-user"></i>
+                            <span>سید محمد حسین موسوی</span>
+                        </div>
+                        <div class="comment_Posted_box_content">
+                            <p>
+                                سلام ببینید آقای جمشیدی بازیگر خوبی است ، اما اگر قرار باشه هر کسی از هر شغلی اومد بیرون
+                                و کاری نداشت بیاد بازیگر بشه که دیگه ، بازیگری شغل نیست . ایشون فوتبالیست بود ، الان
+                                داره مجری گری ،تبلیغ فرش ، بازیگری می‌کنه ، پس دیگه رسم هرکسی از فوتبال اومد بیرون بره
+                                بازیگر مجری بشه ،
+                            </p>
+                        </div>
+                        <div class="comment_Posted_box_like">
+                            <span>دوشنبه ۱۲ مهر ساعت ۱۴:۱۶</span>
+                            <div>
+                                <span><i class="icon-thumbs-down-regular"></i><b>5</b></span>
+                                <span><i class="icon-thumbs-up-regular"></i><b>21</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ******************-->
+                    <div class="comment_Posted_box">
+                        <div class="comment_Posted_box_in">
+                            <i class="icon-user"></i>
+                            <span>سید محمد حسین موسوی</span>
+                        </div>
+                        <div class="comment_Posted_box_content">
+                            <p>
+                                سلام ببینید آقای جمشیدی بازیگر خوبی است ، اما اگر قرار باشه هر کسی از هر شغلی اومد بیرون
+                                و کاری نداشت بیاد بازیگر بشه که دیگه ، بازیگری شغل نیست . ایشون فوتبالیست بود ، الان
+                                داره مجری گری ،تبلیغ فرش ، بازیگری می‌کنه ، پس دیگه رسم هرکسی از فوتبال اومد بیرون بره
+                                بازیگر مجری بشه ،
+                            </p>
+                        </div>
+                        <div class="comment_Posted_box_like">
+                            <span>دوشنبه ۱۲ مهر ساعت ۱۴:۱۶</span>
+                            <div>
+                                <span><i class="icon-thumbs-down-regular"></i><b>5</b></span>
+                                <span><i class="icon-thumbs-up-regular"></i><b>21</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ******************-->
+                    <div class="comment_Posted_box">
+                        <div class="comment_Posted_box_in">
+                            <i class="icon-user"></i>
+                            <span>سید محمد حسین موسوی</span>
+                        </div>
+                        <div class="comment_Posted_box_content">
+                            <p>
+                                سلام ببینید آقای جمشیدی بازیگر خوبی است ، اما اگر قرار باشه هر کسی از هر شغلی اومد بیرون
+                                و کاری نداشت بیاد بازیگر بشه که دیگه ، بازیگری شغل نیست . ایشون فوتبالیست بود ، الان
+                                داره مجری گری ،تبلیغ فرش ، بازیگری می‌کنه ، پس دیگه رسم هرکسی از فوتبال اومد بیرون بره
+                                بازیگر مجری بشه ،
+                            </p>
+                        </div>
+                        <div class="comment_Posted_box_like">
+                            <span>دوشنبه ۱۲ مهر ساعت ۱۴:۱۶</span>
+                            <div>
+                                <span><i class="icon-thumbs-down-regular"></i><b>5</b></span>
+                                <span><i class="icon-thumbs-up-regular"></i><b>21</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_red_com">نمایش بیشتر</a>
+                </div>
+            </section>
+            <!-- * comment Posted-->
+        </article>
+        <!-- * end enter comment-->
+    </main>
+    <!-- ? end main ?-->
+    <!-- ? start footer-->
+    <footer class="footer container">
+        <section class="footer_logo">
+            <img src="Assets/img/logo/logo-RR.png" alt="footer_logo">
+            <img src="Assets/img/logo/gisheh(2)2.png" alt="footer_logo">
+        </section>
+        <section class="footer_menu">
+            <nav class="footer_menu_mdia">
+                <a href="#"><i class="icon-instagram"></i></a>
+                <a href="#"><i class="icon-youtube"></i></a>
+                <a href="#"><i class="icon-facebook"></i></a>
+                <a href="#"><i class="icon-telegram"></i></a>
+                <a href="#"><i class="icon-twitter-square"></i></a>
+            </nav>
+            <nav class="footer_menu_list">
+                <ul>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                    <li><a href="#">اپلیکیشن ها</a></li>
+                    <li><a href="#">قوانین و مقررات</a></li>
+                </ul>
+            </nav>
+            <p class="footer_menu_info">خدمات ارایه شده در گیشه 8، دارای مجوز های لازم از مراجع مربوطه می باشد و هر
+                گونه بهره برداری و سوء
+                استفاده از محتوای نماوا، پیگرد قانونی دارد.
+            </p>
+        </section>
+        <section class="footer_namd">
+            <a href="#"><img src="Assets/img/logo/enamad-1.png" alt="img_namad"></a>
+            <a href="#"><img src="Assets/img/logo/enamad-2.png" alt="img_namad"></a>
+        </section>
+    </footer>
+    <!-- ? start footer -->
+</body>
+
+<script src="Assets/js/jquery-3.6.0.min.js"></script>
+<script src="Assets/js/func.js"></script>
+<script src="Assets/js/style.js"></script>
+
+</html>
