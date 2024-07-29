@@ -21,7 +21,7 @@ const SlideSubscribe = () => {
       style={{ backgroundImage: 'url("./bgHome.jpg")' }}
     >
       <div className="absolute z-20 inset-0 w-full h-full flex items-center justify-center flex-col gap-5 p-8">
-        <h1 className="text-xl text-center font-bold sm:text-5xl text-center dark:text-white text-black">
+        <h1 className="text-xl font-bold sm:text-5xl text-center dark:text-white text-black">
           نا محدود فیلم سریال تماشا کن
         </h1>
         <p className="text-base text-center">
