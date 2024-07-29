@@ -20,11 +20,11 @@ const SlideSubscribe = () => {
       className="h-screen w-screen bg-cover bg-no-repeat after:absolute after:inset-0 after:w-screen  after:h-screen after:z-10"
       style={{ backgroundImage: 'url("./bgHome.jpg")' }}
     >
-      <div className="absolute z-20 inset-0 w-full h-full flex items-center justify-center flex-col gap-5">
-        <h1 className="text-xl text-center font-bold sm:text-5xl dark:text-white text-black">
+      <div className="absolute z-20 inset-0 w-full h-full flex items-center justify-center flex-col gap-5 p-8">
+        <h1 className="text-xl text-center font-bold sm:text-5xl text-center dark:text-white text-black">
           نا محدود فیلم سریال تماشا کن
         </h1>
-        <p className="text-base">
+        <p className="text-base text-center">
           آماده تماشا هستید؟ برای ایجاد یا راه اندازی مجدد عضویت، ایمیل خود را
           وارد کنید.
         </p>
