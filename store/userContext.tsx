@@ -1,6 +1,6 @@
 "use client";
 import { createContext, useContext, type ReactNode } from "react";
-import setCookie from "@/hooks/setCookie";
+import setCookie from "../hooks/setCookie";
 type UserType = {
   id: number;
   name: string;

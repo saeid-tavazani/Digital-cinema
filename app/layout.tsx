@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 import "./globals.css";
+import UserContextProvider from "@/store/userContext";
+import NavBar from "@/components/navBar";
+import Footer from "@/components/footer";
 
 const vazirmatn = Vazirmatn({ subsets: ["latin"] });
 
@@ -16,7 +19,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa-IR" dir="rtl">
-      <body className={vazirmatn.className}>{children}</body>
+      <body className={`${vazirmatn.className} dark`}>
+        <UserContextProvider>
+          <NavBar />
+          {children}
+          <Footer />
+        </UserContextProvider>
+      </body>
     </html>
   );
 }
