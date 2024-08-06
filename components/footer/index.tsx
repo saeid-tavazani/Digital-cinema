@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { navItems } from "../navBar";
 import LogoSite from "../ui/logoSite";
