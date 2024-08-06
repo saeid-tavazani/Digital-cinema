@@ -65,7 +65,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground w-screen h-screen overflow-x-hidden;
   }
 }
 
@@ -80,8 +80,6 @@
 ::-webkit-scrollbar {
   width: 7px;
 }
-
-/* Track */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
