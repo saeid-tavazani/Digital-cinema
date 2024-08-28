@@ -15,7 +15,7 @@ const navItems = [
 const liStyle =
   "text-base my-2 hover:text-red-700 transition-all ease-linear duration-200 whitespace-nowrap";
 
-const NavHeader = () => {
+const NavHeaderItem = () => {
   const [activeSlug, setActiveSlug] = useState<string>("/");
   return (
     <ul className="flex items-center gap-3 h-full">
@@ -32,7 +32,7 @@ const NavHeader = () => {
   );
 };
 
-const NavMobile = () => {
+const NavMobileItem = () => {
   const [activeSlug, setActiveSlug] = useState<string>("/");
   const [open, setOpen] = useState(false);
   return (
@@ -84,25 +84,26 @@ const NavMobile = () => {
   );
 };
 
-export const NavNavHeader = () => {
-  const [sizeWindow, setSizeWindow] = useState<"small" | "large">(
-    window.innerWidth < 760 ? "small" : "large"
-  );
-  const handleWindowSizeSet = () => {
-    if (window.innerWidth < 760) {
-      setSizeWindow("small");
-    } else {
-      setSizeWindow("large");
-    }
-  };
+export const NavHeader = () => {
+  const [sizeWindow, setSizeWindow] = useState<"small" | "large">("large");
 
   useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeSet);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeSet);
+    const handleWindowSizeSet = () => {
+      setSizeWindow(window.innerWidth < 760 ? "small" : "large");
     };
+
+    // Check if window is defined (for client-side rendering)
+    if (typeof window !== "undefined") {
+      handleWindowSizeSet(); // Set initial size
+
+      // Add event listener to update size on window resize
+      window.addEventListener("resize", handleWindowSizeSet);
+
+      // Clean up event listener on component unmount
+      return () => window.removeEventListener("resize", handleWindowSizeSet);
+    }
   }, []);
-  return sizeWindow === "small" ? <NavMobile /> : <NavHeader />;
+  return sizeWindow === "small" ? <NavMobileItem /> : <NavHeaderItem />;
 };
 
 export const NavFooter = () => {

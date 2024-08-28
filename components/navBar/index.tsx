@@ -1,6 +1,6 @@
 import AuthLayout from "./auth/authLayout";
 import LogoSite from "../ui/logoSite";
-import { NavNavHeader } from "./navLink";
+import { NavHeader } from "./navLink";
 // import { NavHeader, NavMobile } from "./navLink";
 
 const index = () => {
@@ -9,7 +9,7 @@ const index = () => {
       <nav className="container flex items-center gap-4 justify-between h-full">
         <div className="flex items-center gap-3">
           <AuthLayout />
-          <NavNavHeader />
+          <NavHeader />
         </div>
         <LogoSite />
       </nav>
