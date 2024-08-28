@@ -1,5 +1,7 @@
 "use client";
 import { type FormEvent, type ReactNode } from "react";
+import { motion } from "framer-motion";
+
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -11,30 +13,43 @@ export default function SignInForm() {
   };
 
   return (
-    <>
-      <form className="my-8 flex flex-col gap-3" onSubmit={handleSubmit}>
-        <LabelInputContainer>
-          <Label htmlFor="number">شماره موبایل</Label>
-          <Input id="number" placeholder="09130000000" type="text" />
-        </LabelInputContainer>
-        <LabelInputContainer>
-          <Label htmlFor="email">ایمیل</Label>
-          <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
-        </LabelInputContainer>
-        <LabelInputContainer>
-          <Label htmlFor="password">رمزعبور</Label>
-          <Input id="password" placeholder="••••••••" type="password" />
-        </LabelInputContainer>
+    <motion.form
+      initial={{
+        opacity: 0,
+        scaleY: 0.9,
+      }}
+      animate={{
+        opacity: 1,
+        scaleY: 1,
+      }}
+      exit={{
+        opacity: 0,
+        scaleY: 0,
+      }}
+      className="my-8 flex flex-col gap-3"
+      onSubmit={handleSubmit}
+    >
+      <LabelInputContainer>
+        <Label htmlFor="number">شماره موبایل</Label>
+        <Input id="number" placeholder="09130000000" type="text" />
+      </LabelInputContainer>
+      <LabelInputContainer>
+        <Label htmlFor="email">ایمیل</Label>
+        <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+      </LabelInputContainer>
+      <LabelInputContainer>
+        <Label htmlFor="password">رمزعبور</Label>
+        <Input id="password" placeholder="••••••••" type="password" />
+      </LabelInputContainer>
 
-        <button
-          className="bg-gradient-to-br mt-8 relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-          type="submit"
-        >
-          ورود
-          <BottomGradient />
-        </button>
-      </form>
-    </>
+      <button
+        className="bg-gradient-to-br mt-8 relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+        type="submit"
+      >
+        ورود
+        <BottomGradient />
+      </button>
+    </motion.form>
   );
 }
 

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   Modal,
   ModalBody,
@@ -20,7 +21,9 @@ export default function AuthLayout() {
         </ModalTrigger>
         <ModalBody>
           <ModalContent>
-            {isSignUp ? <SignUpForm /> : <SignInForm />}
+            <AnimatePresence>
+              {isSignUp ? <SignUpForm /> : <SignInForm />}
+            </AnimatePresence>
             <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mt-4 mb-5 h-[1px] w-full" />
             <p
               onClick={() => setIsSignUp(!isSignUp)}
