@@ -65,8 +65,12 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-background text-foreground w-screen h-screen overflow-x-hidden;
+    @apply bg-background text-foreground w-screen h-screen;
   }
+}
+
+body {
+  overflow-x: hidden !important;
 }
 
 #silde-gradient::after {
