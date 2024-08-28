@@ -2,8 +2,7 @@ import LogoSite from "../ui/logoSite";
 import { NavFooter } from "../navBar/navLink";
 const index = () => {
   return (
-    <footer className="w-screen overflow-hidden">
-      {/* <div className="w-full h-2 bg-input" /> */}
+    <footer className="w-full">
       <section className="container grid gap-6 py-10 grid-cols-3">
         <div className="col-span-3 md:col-span-1">
           <LogoSite />
@@ -19,7 +18,11 @@ const index = () => {
         </div>
         <div className="col-span-3 sm:col-span-1">
           <a href="https://enamad.ir/" target="_blank">
-            <img src="./enamad.jpg" alt="enamad" className="rounded-md w-36" />
+            <img
+              src="./enamad.jpg"
+              alt="enamad"
+              className="rounded-md max-w-36"
+            />
           </a>
         </div>
       </section>
