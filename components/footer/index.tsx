@@ -2,7 +2,7 @@ import LogoSite from "../ui/logoSite";
 import { NavFooter } from "../navBar/navLink";
 const index = () => {
   return (
-    <footer className="w-full">
+    <footer className="w-full mt-5">
       <section className="container grid gap-6 py-10 grid-cols-3">
         <div className="col-span-3 md:col-span-1">
           <LogoSite />
