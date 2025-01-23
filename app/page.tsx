@@ -1,7 +1,5 @@
-import HomePage from "./home/homePage";
-
-const Home = () => {
-  return <HomePage />;
+const Page = () => {
+  return <div></div>;
 };
 
-export default Home;
+export default Page;
