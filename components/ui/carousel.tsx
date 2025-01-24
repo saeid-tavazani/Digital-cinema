@@ -29,7 +29,11 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     };
 
     frameRef.current = requestAnimationFrame(animate);
-    return () => frameRef.current && cancelAnimationFrame(frameRef.current);
+    return () => {
+      if (frameRef.current !== null) {
+        cancelAnimationFrame(frameRef.current);
+      }
+    };
   }, []);
 
   const handleMouseMove = (event: React.MouseEvent) => {
