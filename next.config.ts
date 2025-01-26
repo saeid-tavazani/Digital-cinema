@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
       },
       { hostname: 'media.themoviedb.org' },
       { hostname: 'img.cdno.my.id' },
+      { hostname: 'image.tmdb.org' },
     ],
   },
 };
