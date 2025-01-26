@@ -1,26 +1,20 @@
-import Carousel from '@/components/ui/carousel';
-import { Data } from '@/types';
+import Movies from '@/components/Movies';
+import MovieSlider from '@/components/movieSlider';
+import MoviesSkeleton from '@/components/moviesSkeleton';
+import { Skeleton } from '@/components/ui/skeleton';
+import { Suspense } from 'react';
 
-const Page = async () => {
-  const response = await fetch(`${process.env.API_URL}/recommendations/19995`, {
-    method: 'GET',
-    headers: {
-      'x-rapidapi-key': 'f8a6283890msh85a88cddfb891edp105cc0jsne52d748a20d2',
-      'x-rapidapi-host': 'advance-movie-api.p.rapidapi.com',
-    },
-  });
-
-  if (!response.ok) {
-    const message = `An error has occured: ${response.status}`;
-    throw new Error(message);
-  }
-
-  const movis: Data = await response.json();
-
+const Page = () => {
   return (
-    <div className="container overflow-hidden">
-      <Carousel slides={movis.result.data.slice(0, 6)} />
-    </div>
+    <main className="container overflow-hidden">
+      <Suspense fallback={<Skeleton className="w-full h-[65vmin] rounded-[1%]" />}>
+        <MovieSlider />
+      </Suspense>
+
+      <Suspense fallback={<MoviesSkeleton />}>
+        <Movies api="upcoming" />
+      </Suspense>
+    </main>
   );
 };
 
