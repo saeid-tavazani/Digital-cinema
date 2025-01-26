@@ -1,4 +1,4 @@
-import Movies from '@/components/Movies';
+import Movies from '@/components/movies';
 import MovieSlider from '@/components/movieSlider';
 import MoviesSkeleton from '@/components/moviesSkeleton';
 import { Skeleton } from '@/components/ui/skeleton';
